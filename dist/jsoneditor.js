@@ -6023,7 +6023,7 @@ JSONEditor.AbstractTheme = Class.extend({
     var el = document.createElement('div');
     el.style = el.style || {};
     el.style.cssFloat = 'right';
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     return el;
   },
   getModal: function() {
@@ -6081,7 +6081,7 @@ JSONEditor.AbstractTheme = Class.extend({
     return el;
   },
   getHeader: function(text) {
-    var el = document.createElement('h3');
+    var el = document.createElement('h4');
     if(typeof text === "string") {
       el.textContent = text;
     }
@@ -6190,8 +6190,8 @@ JSONEditor.AbstractTheme = Class.extend({
   getIndentedPanel: function() {
     var el = document.createElement('div');
     el.style = el.style || {};
-    el.style.paddingLeft = '10px';
-    el.style.marginLeft = '10px';
+    el.style.paddingLeft = '0.5em';
+    el.style.marginLeft = '0.5em';
     el.style.borderLeft = '1px solid #ccc';
     return el;
   },
@@ -6443,7 +6443,7 @@ JSONEditor.defaults.themes.bootstrap2 = JSONEditor.AbstractTheme.extend({
   },
   getHeaderButtonHolder: function() {
     var el = this.getButtonHolder();
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     return el;
   },
   getButtonHolder: function() {
@@ -6541,7 +6541,7 @@ JSONEditor.defaults.themes.bootstrap3 = JSONEditor.AbstractTheme.extend({
   getSelectInput: function(options) {
     var el = this._super(options);
     el.className += 'form-control';
-    //el.style.width = 'auto';
+    el.style.width = '100%';
     return el;
   },
   setGridColumnSize: function(el,size) {
@@ -6599,8 +6599,6 @@ JSONEditor.defaults.themes.bootstrap3 = JSONEditor.AbstractTheme.extend({
   },
   getIndentedPanel: function() {
     var el = document.createElement('div');
-    el.className = 'well well-sm';
-    el.style.paddingBottom = 0;
     return el;
   },
   getFormInputDescription: function(text) {
@@ -6611,7 +6609,7 @@ JSONEditor.defaults.themes.bootstrap3 = JSONEditor.AbstractTheme.extend({
   },
   getHeaderButtonHolder: function() {
     var el = this.getButtonHolder();
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     return el;
   },
   getButtonHolder: function() {
@@ -6626,8 +6624,8 @@ JSONEditor.defaults.themes.bootstrap3 = JSONEditor.AbstractTheme.extend({
   },
   getTable: function() {
     var el = document.createElement('table');
-    el.className = 'table table-bordered';
-    el.style.width = 'auto';
+    el.className = 'table table-striped';
+    el.style.width = '100%';
     el.style.maxWidth = 'none';
     return el;
   },
@@ -6746,7 +6744,7 @@ JSONEditor.defaults.themes.foundation = JSONEditor.AbstractTheme.extend({
   getFormInputDescription: function(text) {
     var el = document.createElement('p');
     el.textContent = text;
-    el.style.marginTop = '-10px';
+    el.style.marginTop = '-0.5em';
     el.style.fontStyle = 'italic';
     return el;
   },
@@ -6759,7 +6757,7 @@ JSONEditor.defaults.themes.foundation = JSONEditor.AbstractTheme.extend({
   getHeaderButtonHolder: function() {
     var el = this.getButtonHolder();
     el.style.display = 'inline-block';
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     el.style.verticalAlign = 'middle';
     return el;
   },
@@ -6964,7 +6962,7 @@ JSONEditor.defaults.themes.html = JSONEditor.AbstractTheme.extend({
   getHeaderButtonHolder: function() {
     var el = this.getButtonHolder();
     el.style.display = 'inline-block';
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     el.style.fontSize = '.8em';
     el.style.verticalAlign = 'middle';
     return el;
@@ -7035,14 +7033,14 @@ JSONEditor.defaults.themes.jqueryui = JSONEditor.AbstractTheme.extend({
   },
   getHeaderButtonHolder: function() {
     var el = this.getButtonHolder();
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     el.style.fontSize = '.6em';
     el.style.display = 'inline-block';
     return el;
   },
   getFormInputDescription: function(text) {
     var el = this.getDescription(text);
-    el.style.marginLeft = '10px';
+    el.style.marginLeft = '0.5em';
     el.style.display = 'inline-block';
     return el;
   },
