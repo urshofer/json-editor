@@ -3,7 +3,7 @@
     "description": "Json Editor",
     "type": "Library",
     "license": "MIT",
-    "version": "0.7.12",
+    "version": "0.7.23",
     "minimum-stability": "dev",
     "authors": [
         {
