@@ -1,9 +1,8 @@
 {
-    "name": "urshofer/json-edit",
+    "name": "jdorn/json-edit",
     "description": "Json Editor",
     "type": "Library",
     "license": "MIT",
-    "version": "0.7.23",
     "minimum-stability": "dev",
     "authors": [
         {
